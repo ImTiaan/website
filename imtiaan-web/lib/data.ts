@@ -2,8 +2,8 @@ export const profileData = {
   name: "Tiaan Wolmarans",
   title: "Chief Operating Officer & Head of Product",
   tagline: "Fintech | Blockchain | Operations | Product Innovation",
-  location: "Cape Town, South Africa",
-  email: "hello@imtiaan.com", // Placeholder
+  location: "Liverpool, UK",
+  email: "t@imtiaan.com", // Placeholder
   socials: {
     linkedin: "https://www.linkedin.com/in/imtiaan/",
     medium: "https://imtiaan.medium.com",

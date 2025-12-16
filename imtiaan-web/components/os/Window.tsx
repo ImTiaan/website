@@ -36,6 +36,13 @@ export default function Window({
   const [isMaximized, setIsMaximized] = useState(false);
   const dragControls = useDragControls();
 
+  useEffect(() => {
+    // Default to maximized on mobile
+    if (window.innerWidth < 768) {
+      setIsMaximized(true);
+    }
+  }, []);
+
   if (!isOpen) return null;
 
   return (

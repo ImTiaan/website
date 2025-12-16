@@ -35,7 +35,13 @@ export default function Dock({ onOpenApp, activeApps }: DockProps) {
           return (
             <motion.button
               key={app.id}
-              onClick={() => onOpenApp(app.id)}
+              onClick={() => {
+                if (app.id === "contact") {
+                  window.location.href = "mailto:t@imtiaan.com";
+                } else {
+                  onOpenApp(app.id);
+                }
+              }}
               whileHover={{ scale: 1.2, y: -5 }}
               whileTap={{ scale: 0.95 }}
               className="relative group flex flex-col items-center gap-1"
