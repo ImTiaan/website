@@ -33,7 +33,7 @@ My expertise in driving strategic growth and innovation within financial service
         "Lead the Product, Marketing, Operations, BI, Customer Support, and Compliance divisions.",
         "Spearheaded strategic growth initiatives at a leading crypto fintech platform, enhancing operational efficiency and regulatory compliance, directly contributing to an increase in market penetration.",
         "Championed a culture of innovation and collaboration, setting performance metrics that aligned with organisational goals.",
-        "Key Achievement: Resulted in a 68% growth in platform usage within a dynamic industry, managing investment portfolios for over 800 clients with over $25M in assets under care."
+        "Key Achievement: Resulted in a 68% growth in platform usage within a dynamic industry, managing investment portfolios for over 18000 clients with over $25M in assets under care."
       ]
     },
     {
