@@ -34,7 +34,7 @@ How do we build this twin? We do not use a standard database. We do not store "C
 
 FintraOS is built on **Event Sourcing**.
 
-In our architecture, the database is not the source of truth; the *Log* is the source of truth. Every single financial action—a deposit, a trade, a fee, a tax event—is recorded as an immutable, append-only event.
+In our architecture, the database is not the source of truth; the *Log* is the source of truth. Every single financial action - a deposit, a trade, a fee, a tax event - is recorded as an immutable, append-only event.
 `Event: SalaryReceived { amount: 5000, timestamp: T1 }`
 `Event: RentPaid { amount: 2000, timestamp: T2 }`
 
@@ -46,7 +46,7 @@ This is not estimation. This is deterministic replay. This engine runs in real-t
 
 Insight is useless without action. A dashboard that tells you "You are overspending" is a nag. An OS that says "I moved money to cover your deficit" is a partner.
 
-**Pulse** is the nervous system of FintraOS. It is an event emitter that watches the state machine. It allows developers to define "Smart Events"—logic gates that trigger automatically when the Financial Twin enters a specific state.
+**Pulse** is the nervous system of FintraOS. It is an event emitter that watches the state machine. It allows developers to define "Smart Events" - logic gates that trigger automatically when the Financial Twin enters a specific state.
 
 ```typescript
 // A simplified view of a Pulse Rule
@@ -63,7 +63,7 @@ if (
 }
 ```
 
-This is not a cron job running once a night. This is a real-time reaction. The moment the condition is met—perhaps a salary deposit hits, or the Treasury yield spikes—Pulse fires. It enables a new class of "Self-Driving" features: **Liquidity-Aware Sweeps**, **Smart Debt Consolidation**, and **Automated Tax-Loss Harvesting**. It turns money from a static asset into a dynamic flow.
+This is not a cron job running once a night. This is a real-time reaction. The moment the condition is met - perhaps a salary deposit hits, or the Treasury yield spikes - Pulse fires. It enables a new class of "Self-Driving" features: **Liquidity-Aware Sweeps**, **Smart Debt Consolidation**, and **Automated Tax-Loss Harvesting**. It turns money from a static asset into a dynamic flow.
 
 ### Safe AI with "Guard"
 

@@ -8,15 +8,15 @@ readTime: "25 min read"
 
 History is written by the victors, but in crypto, it is usually written by the survivors.
 
-If you look at the stablecoin market today, it looks like a boring, solved problem. You have Tether (USDT) and Circle (USDC) acting as the digital checking accounts for the entire industry. They are monolithic, centralised, and—boringly—reliable. They work because they rely on the oldest trick in finance: for every digital dollar here, there is a real dollar sitting in a bank vault somewhere (or at least, a very liquid Treasury bill).
+If you look at the stablecoin market today, it looks like a boring, solved problem. You have Tether (USDT) and Circle (USDC) acting as the digital checking accounts for the entire industry. They are monolithic, centralised, and - boringly - reliable. They work because they rely on the oldest trick in finance: for every digital dollar here, there is a real dollar sitting in a bank vault somewhere (or at least, a very liquid Treasury bill).
 
 But it wasn't always this way.
 
-To understand where we are going—and why the future of money might actually be built on Bitcoin—we have to look back at the graveyard of good intentions. We have to look at the "algo-stables," the DAOs, and the spectral ghosts of projects that promised us decentralised stability and delivered absolute ruin.
+To understand where we are going - and why the future of money might actually be built on Bitcoin - we have to look back at the graveyard of good intentions. We have to look at the "algo-stables," the DAOs, and the spectral ghosts of projects that promised us decentralised stability and delivered absolute ruin.
 
 ### The First Arrow: BitUSD (2014)
 
-Long before DeFi was a buzzword, two of crypto's most controversial figures—Dan Larimer (who went on to found EOS) and Charles Hoskinson (who founded Cardano)—were building **BitShares**.
+Long before DeFi was a buzzword, two of crypto's most controversial figures - Dan Larimer (who went on to found EOS) and Charles Hoskinson (who founded Cardano) - were building **BitShares**.
 
 BitShares was lightyears ahead of its time. It was a delegated proof-of-stake blockchain when Bitcoin was the only game in town. And its crown jewel was **BitUSD**.
 
@@ -38,13 +38,13 @@ If BitUSD was an automated machine, NuBits was a digital central bank run by a m
 
 It worked beautifully for a year. The price graph was a flat line. The team was celebrated.
 
-Then, the Bitcoin price crashed. Demand for NuBits evaporated. The "Custodians" couldn't react fast enough. The peg snapped. NuBits crashed to $0.20, then rallied, then crashed again. Today, it trades for pennies—a zombie token reminding us that "DAO governance" is often just a fancy word for "slow, panicked humans."
+Then, the Bitcoin price crashed. Demand for NuBits evaporated. The "Custodians" couldn't react fast enough. The peg snapped. NuBits crashed to $0.20, then rallied, then crashed again. Today, it trades for pennies - a zombie token reminding us that "DAO governance" is often just a fancy word for "slow, panicked humans."
 
 ### The Titan: MakerDAO (2017)
 
 Out of these ashes rose **MakerDAO**.
 
-Maker learned from BitUSD. It launched DAI, a stablecoin backed by Ethereum. But unlike its predecessors, Maker was paranoid. It demanded massive over-collateralization (150%+). It built sophisticated liquidation bots. It created a governance token (MKR) that acted as a lender of last resort—if the system failed, MKR holders would be diluted to pay back the debt.
+Maker learned from BitUSD. It launched DAI, a stablecoin backed by Ethereum. But unlike its predecessors, Maker was paranoid. It demanded massive over-collateralization (150%+). It built sophisticated liquidation bots. It created a governance token (MKR) that acted as a lender of last resort - if the system failed, MKR holders would be diluted to pay back the debt.
 
 DAI survived the 2018 crash (where ETH fell 90%). It survived "Black Thursday" in March 2020. It proved that a crypto-backed stablecoin *could* work, but only if it was conservative, slow, and ruthlessly efficient at liquidating its own users.
 
@@ -76,6 +76,6 @@ But amidst the wreckage, a truth emerged. The market didn't want fancy algorithm
 
 Or, perhaps, it wanted Euros. But nobody was building them.
 
-And while Ethereum has been the home of this innovation, the original king—Bitcoin—has been watching. And waiting.
+And while Ethereum has been the home of this innovation, the original king - Bitcoin - has been watching. And waiting.
 
 In Part II, we look at the current hegemony of Tether and Circle, and the regulatory fortress of Europe that is changing the game.

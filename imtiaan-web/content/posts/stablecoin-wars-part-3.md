@@ -32,7 +32,7 @@ The "Euro-backed" stablecoins of today are ghosts. They have no liquidity. They 
 
 But this void creates a vacuum. And nature abhors a vacuum.
 
-The opportunity right now is not to build "another stablecoin." It is to build a **sovereign monetary rail** for Europe. A digital Euro that is not a Central Bank Digital Currency (CBDC)—which comes with dystopian surveillance baggage—but a private, fully reserved, MiCA-compliant bearer asset.
+The opportunity right now is not to build "another stablecoin." It is to build a **sovereign monetary rail** for Europe. A digital Euro that is not a Central Bank Digital Currency (CBDC) - which comes with dystopian surveillance baggage - but a private, fully reserved, MiCA-compliant bearer asset.
 
 And unlike the failed experiments of the past, this champion should not be built on Ethereum.
 
@@ -48,7 +48,7 @@ For the last decade, we couldn't issue assets on Bitcoin. It was too slow. It wa
 
 ### The Architecture of the Euro-Stable
 
-Imagine a new European stablecoin—let's call it **EuroZero**.
+Imagine a new European stablecoin - let's call it **EuroZero**.
 
 1.  **Issued on Taproot Assets:**
     EuroZero is minted directly on the Bitcoin blockchain using the Taproot Assets protocol. It is secured by the immense hash power of the Bitcoin miners. It is immutable.

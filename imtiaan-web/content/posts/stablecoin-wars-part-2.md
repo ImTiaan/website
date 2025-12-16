@@ -6,7 +6,7 @@ category: "Regulation"
 readTime: "25 min read"
 ---
 
-If Part I of this saga was a Western—full of bandits, shootouts, and gold rushes—Part II is a courtroom drama set in Brussels.
+If Part I of this saga was a Western - full of bandits, shootouts, and gold rushes - Part II is a courtroom drama set in Brussels.
 
 The wild experiments of 2014-2022 are over. The dust from the Terra crater has settled. And what we are left with is a market that looks surprisingly like the traditional finance system it swore to destroy.
 
@@ -26,7 +26,7 @@ Both operate on the same boring model: **Fiat-Backed.** You give them $1, they p
 
 But it has a fatal flaw: **Censorship.**
 
-Tether and Circle can—and do—freeze addresses. If law enforcement asks, your money is gone. The "permissionless" promise of crypto ends the moment you touch a centralised stablecoin.
+Tether and Circle can - and do - freeze addresses. If law enforcement asks, your money is gone. The "permissionless" promise of crypto ends the moment you touch a centralised stablecoin.
 
 ### The European Fortress: MiCA
 
@@ -35,7 +35,7 @@ While the Americans have been regulating by enforcement (suing everyone), Europe
 **MiCA (Markets in Crypto-Assets)** is the most comprehensive crypto regulation in the world. As of June 30, 2024, it is the law of the land for stablecoins in the EU.
 
 MiCA divides stablecoins into two buckets:
-1.  **Asset-Referenced Tokens (ARTs):** Think of the old Facebook Libra idea—a basket of currencies.
+1.  **Asset-Referenced Tokens (ARTs):** Think of the old Facebook Libra idea - a basket of currencies.
 2.  **E-Money Tokens (EMTs):** Single-currency pegs (like a digital Euro or Dollar).
 
 The rules for EMTs are brutal:
@@ -46,7 +46,7 @@ The rules for EMTs are brutal:
 
 The impact has been immediate. **Tether (USDT)**, which has historically been slow to open its books, has faced delistings from major European exchanges. **Circle**, seeing the opportunity, became the first global issuer to be fully MiCA compliant with its USDC and EURC tokens.
 
-Europe has effectively built a fortress. Inside, you have "White" stablecoins—safe, regulated, KYC'd, and fully surveilled. Outside, you have the "Grey" market—Tether, offshore, wild.
+Europe has effectively built a fortress. Inside, you have "White" stablecoins - safe, regulated, KYC'd, and fully surveilled. Outside, you have the "Grey" market - Tether, offshore, wild.
 
 But there is a ghost in the machine.
 
@@ -70,4 +70,4 @@ Is this it? Is the future just regulated banks issuing tokens on centralised dat
 
 No. Because the sleeping giant has woken up.
 
-In Part III, we look at the technology that fixes this. We look at how Bitcoin—the only chain that actually matters for long-term value—combined with European sovereignty, is about to change the world.
+In Part III, we look at the technology that fixes this. We look at how Bitcoin - the only chain that actually matters for long-term value - combined with European sovereignty, is about to change the world.
