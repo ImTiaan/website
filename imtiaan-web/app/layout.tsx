@@ -12,10 +12,10 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://imtiaan.com"),
   title: {
-    default: "Imtiaan Wolmarans | Financial OS Architect",
-    template: "%s | Imtiaan Wolmarans",
+    default: "Tiaan Wolmarans | Financial OS Architect",
+    template: "%s | Tiaan Wolmarans",
   },
-  description: "Personal portfolio and operating system of Imtiaan Wolmarans. Exploring the future of fintech, programmable money, and sovereign digital infrastructure.",
+  description: "Personal portfolio and operating system of Tiaan Wolmarans. Exploring the future of fintech, programmable money, and sovereign digital infrastructure.",
   keywords: [
     "Fintech",
     "Product Manager",
@@ -26,29 +26,29 @@ export const metadata: Metadata = {
     "Operating System",
     "Next.js",
     "React",
-    "Imtiaan Wolmarans",
+    "Tiaan Wolmarans",
   ],
-  authors: [{ name: "Imtiaan Wolmarans", url: "https://imtiaan.com" }],
-  creator: "Imtiaan Wolmarans",
+  authors: [{ name: "Tiaan Wolmarans", url: "https://imtiaan.com" }],
+  creator: "Tiaan Wolmarans",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://imtiaan.com",
-    title: "Imtiaan Wolmarans | Financial OS Architect",
-    description: "Personal portfolio and operating system of Imtiaan Wolmarans. Exploring the future of fintech, programmable money, and sovereign digital infrastructure.",
+    title: "Tiaan Wolmarans | Financial OS Architect",
+    description: "Personal portfolio and operating system of Tiaan Wolmarans. Exploring the future of fintech, programmable money, and sovereign digital infrastructure.",
     siteName: "tOS",
     images: [
       {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Imtiaan Wolmarans - Financial OS Architect",
+        alt: "Tiaan Wolmarans - Financial OS Architect",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Imtiaan Wolmarans | Financial OS Architect",
+    title: "Tiaan Wolmarans | Financial OS Architect",
     description: "Building the future of sovereign financial infrastructure. Explore the OS.",
     creator: "@t333btc", // Assuming this handle based on user path, or placeholder
     images: ["/opengraph-image"],

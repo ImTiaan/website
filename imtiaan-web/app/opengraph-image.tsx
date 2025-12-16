@@ -91,7 +91,7 @@ export default async function Image() {
                 letterSpacing: "-0.02em",
               }}
             >
-              Imtiaan Wolmarans
+              Tiaan Wolmarans
             </h1>
             <div
               style={{
