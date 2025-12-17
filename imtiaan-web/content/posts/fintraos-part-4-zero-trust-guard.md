@@ -26,7 +26,7 @@ At FintraOS, we decided that security is too important to be left to application
 
 FintraOS implements the **Guard Sidecar Pattern** to enforce a "Zero Trust" architecture. We do not trust individual services or developers to handle security correctly. Instead, we bake it into the infrastructure.
 
-Every service in our cluster—whether it is the Core engine or a third-party plugin—sits behind a lightweight proxy called **Guard**.
+Every service in our cluster - whether it is the Core engine or a third-party plugin - sits behind a lightweight proxy called **Guard**.
 
 #### 1. Transparent Encryption
 When a service writes data to the database, it does not encrypt the data itself. It sends plain text to the Guard Sidecar.
@@ -50,13 +50,13 @@ Regulations like GDPR and CCPA grant users the "Right to be Forgotten." In a com
 
 FintraOS addresses this via **Crypto-Shredding** (defined in our Architecture Decision Record ADR-002).
 
-*   **The Strategy:** Every user is assigned a unique Data Encryption Key (DEK). All their data—every transaction, every PII field—is encrypted with this specific key.
+*   **The Strategy:** Every user is assigned a unique Data Encryption Key (DEK). All their data - every transaction, every PII field - is encrypted with this specific key.
 *   **The Key Hierarchy:**
     *   **Master Key:** Protects the Tenant Keys (stored in a Hardware Security Module).
     *   **Tenant Key:** Protects the User Keys.
     *   **User Key (DEK):** Encrypts the actual user data.
 *   **The Deletion Process:** When a user requests deletion, we do not attempt to scrub every row in every database partition. Instead, we simply delete their DEK from the KMS.
-*   **The Result:** Instantly, all the user's data—across petabytes of backups, logs, and archives—becomes mathematical gibberish. It is rendered irretrievable. We have "shredded" the data by destroying the only means to read it. This ensures 100% compliance without complex and error-prone data scrubbing operations.
+*   **The Result:** Instantly, all the user's data - across petabytes of backups, logs, and archives - becomes mathematical gibberish. It is rendered irretrievable. We have "shredded" the data by destroying the only means to read it. This ensures 100% compliance without complex and error-prone data scrubbing operations.
 
 ### Bank-Grade vs. Fortress-Grade
 
@@ -86,4 +86,4 @@ Guard enforces policy-as-code at the infrastructure layer so applications remain
 
 ### Next
 
-We've locked the doors and encrypted the keys. But what happens when the road outside collapses? In the final chapter, we'll look at how we survive in a world where bank APIs are constantly catching fire. Part 5 dives into the Provider Abstraction Layer—how we handle adapters, failovers, and telemetry-driven routing to keep the system running when the rest of the world is down.
+We've locked the doors and encrypted the keys. But what happens when the road outside collapses? In the final chapter, we'll look at how we survive in a world where bank APIs are constantly catching fire. Part 5 dives into the Provider Abstraction Layer - how we handle adapters, failovers, and telemetry-driven routing to keep the system running when the rest of the world is down.

@@ -29,7 +29,7 @@ To solve this, we built a defensive layer that assumes the outside world is alwa
 FintraOS treats bank providers like redundant hard drives in a RAID array. We have built the **Provider Abstraction Layer (PAL)** to insulate applications from this underlying chaos.
 
 #### 1. The "Universal Adapter"
-We cannot force external providers to change their APIs. Instead, we wrap every provider—whether it is Plaid, Yapily, Teller, a brokerage API, a market data vendor, a crypto exchange, or a direct bank API—in a bespoke **Adapter**. This adapter acts as a translation layer, coercing their messy, inconsistent data structures into *our* internal strict interface.
+We cannot force external providers to change their APIs. Instead, we wrap every provider - whether it is Plaid, Yapily, Teller, a brokerage API, a market data vendor, a crypto exchange, or a direct bank API - in a bespoke **Adapter**. This adapter acts as a translation layer, coercing their messy, inconsistent data structures into *our* internal strict interface.
 
 ```go
 type ProviderAdapter interface {
@@ -74,6 +74,6 @@ By aggregating redundancy, abstracting complexity, and arbitrating latency, we p
 
 ### Next
 
-And that's the stack. From the kernel to the edge, we've rebuilt the primitives of finance. We hope this series gave you a peek behind the curtain. The plumbing is done—now go build something amazing.
+And that's the stack. From the kernel to the edge, we've rebuilt the primitives of finance. We hope this series gave you a peek behind the curtain. The plumbing is done - now go build something amazing.
 
 *(Stay tuned for our upcoming "Case Studies" series, where we'll walk through building a retirement contribution app using the FintraOS SDK.)*

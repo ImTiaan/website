@@ -8,11 +8,11 @@ readTime: "15 min read"
 
 ### Series Context
 
-Welcome to the rabbit hole. Over the next five articles, we're going to deconstruct exactly how we built FintraOS. Not the marketing fluff, but the actual engineering decisions—the trade-offs, the late-night refactors, and the "aha" moments. This is the opening piece, framing why finance needs an operating system rather than just another API. In the next article, we'll dive into the Financial Graph and Event Sourcing, covering everything from bank accounts to crypto wallets.
+Welcome to the rabbit hole. Over the next five articles, we're going to deconstruct exactly how we built FintraOS. Not the marketing fluff, but the actual engineering decisions - the trade-offs, the late-night refactors, and the "aha" moments. This is the opening piece, framing why finance needs an operating system rather than just another API. In the next article, we'll dive into the Financial Graph and Event Sourcing, covering everything from bank accounts to crypto wallets.
 
 ### The "Plumbing Trap": A Structural Analysis of Fintech Failure
 
-Every fintech founder begins with a hypothesis about value. "I want to build an autonomous savings app that helps gig workers retire." Or, "I want to automate small business lending based on real-time cash flow." The vision is always about the *Application Layer*—the specific, high-level value delivered to the end-user.
+Every fintech founder begins with a hypothesis about value. "I want to build an autonomous savings app that helps gig workers retire." Or, "I want to automate small business lending based on real-time cash flow." The vision is always about the *Application Layer* - the specific, high-level value delivered to the end-user.
 
 However, the reality of execution reveals a hidden barrier: The Plumbing Trap.
 
@@ -28,7 +28,7 @@ The result is that **most fintech startups spend their first 18 months acting as
 
 The history of computing offers a clear parallel. In the 1980s, software development was constrained by hardware fragmentation. To write a word processor, a developer had to write assembly code to communicate with specific printer drivers, keyboard controllers, and graphics cards.
 
-The revolution came with the Operating System (OS). Windows and macOS abstracted the "messy hardware"—the voltage regulation, the memory addresses, the device interrupts—so that developers could focus entirely on the *software*.
+The revolution came with the Operating System (OS). Windows and macOS abstracted the "messy hardware" - the voltage regulation, the memory addresses, the device interrupts - so that developers could focus entirely on the *software*.
 
 FintraOS applies this exact architectural philosophy to the financial sector.
 
@@ -37,7 +37,7 @@ In this metaphor, the global financial system is the "hardware." It is a heterog
 *   **Legacy Banking Core:** COBOL mainframes dating back to the 1970s, often with limited availability windows (e.g., offline for maintenance on Sunday nights).
 *   **Open Banking APIs:** Fragmented standards (PSD2 in Europe, FDX in the US, CDR in Australia) that vary wildly in implementation quality and reliability.
 *   **Crypto & DeFi:** A distinct universe of distributed ledgers, wallet addresses, and gas fees, operating on entirely different cryptographic primitives.
-*   **Regulatory Frameworks:** KYC, AML, GDPR, CCPA—the "drivers" required to operate legally within specific jurisdictions.
+*   **Regulatory Frameworks:** KYC, AML, GDPR, CCPA - the "drivers" required to operate legally within specific jurisdictions.
 
 #### 2. The "Kernel": The Unifying Abstraction Layer
 FintraOS acts as the kernel. It does not merely pass data through; it normalises and abstracts it. We treat a transaction from a traditional bank (e.g., Chase), a Bitcoin transfer from an exchange (e.g., Coinbase), and a mortgage payment from a credit union as the exact same object: a `UnifiedTransaction`.

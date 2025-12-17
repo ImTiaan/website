@@ -20,7 +20,7 @@ But in finance, amnesia is a crime.
 
 If a user's balance drops from $1,000 to $500, the system cannot just "update" the number. It must prove *why* it changed. Was it a withdrawal? A fee? A market crash? A hack? If your database only stores the current balance, you have lost the evidence. You cannot audit, you cannot reverse, and you cannot explain.
 
-We realized that for a financial operating system, CRUD was not just insufficient—it was dangerous. So we killed it.
+We realized that for a financial operating system, CRUD was not just insufficient - it was dangerous. So we killed it.
 
 ### The FintraOS Approach: Immutable History via Event Sourcing
 
@@ -108,4 +108,4 @@ This architecture provides the best of both worlds: the unshakeable integrity of
 
 ### Next
 
-Now we have a perfect memory of the past. But what about the future? In Part 3, we'll look at how we build a brain on top of this nervous system—one that doesn't just record transactions, but anticipates them. We'll explore our Bi-Modal Intelligence Architecture and how it handles everything from portfolio rebalancing to retirement planning.
+Now we have a perfect memory of the past. But what about the future? In Part 3, we'll look at how we build a brain on top of this nervous system - one that doesn't just record transactions, but anticipates them. We'll explore our Bi-Modal Intelligence Architecture and how it handles everything from portfolio rebalancing to retirement planning.

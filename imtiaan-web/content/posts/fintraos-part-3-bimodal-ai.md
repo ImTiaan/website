@@ -8,7 +8,7 @@ readTime: "16 min read"
 
 ### Series Context
 
-We've built the kernel, and we've given it a perfect memory (Event Sourcing). Now it's time to give it a brain. But not just any brain—one that can think fast enough to catch a transaction, and slow enough to plan for your retirement. This article explains how we built an intelligence layer that spans your entire financial life, from your daily coffee to your 401(k).
+We've built the kernel, and we've given it a perfect memory (Event Sourcing). Now it's time to give it a brain. But not just any brain - one that can think fast enough to catch a transaction, and slow enough to plan for your retirement. This article explains how we built an intelligence layer that spans your entire financial life, from your daily coffee to your 401(k).
 
 ### The Limitations of "Static" AI
 
@@ -65,7 +65,7 @@ The application transforms from a passive dashboard into an active partner. It w
 
 ### The Feedback Loop
 
-A critical component of this architecture is the learning loop. If a user manually corrects a category—changing "Fuel" to "Groceries" because they bought a sandwich at the petrol station—that correction is captured.
+A critical component of this architecture is the learning loop. If a user manually corrects a category - changing "Fuel" to "Groceries" because they bought a sandwich at the petrol station - that correction is captured.
 
 1.  **Private Learning:** The user's personal model updates instantly to reflect this preference.
 2.  **Global Learning:** The correction is anonymised (stripped of all PII) and added to the "Global Training Set." The next nightly training run improves the BERT model for *all* users.

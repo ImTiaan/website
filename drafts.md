@@ -10,7 +10,7 @@
 
 We are not building another "Bank API Aggregator." We are building the **Operating System for Finance**.
 
-In the 1980s, computing was fragmented. If you wanted to write a word processor, you had to write assembly code to talk to the printer, the keyboard, and the graphics card. Every developer was reinventing the wheel. Then came Windows and macOS. They abstracted the hardware—the messy voltage and memory addresses—so developers could focus entirely on the *software*.
+In the 1980s, computing was fragmented. If you wanted to write a word processor, you had to write assembly code to talk to the printer, the keyboard, and the graphics card. Every developer was reinventing the wheel. Then came Windows and macOS. They abstracted the hardware - the messy voltage and memory addresses - so developers could focus entirely on the *software*.
 
 Today, Fintech is stuck in that pre-Windows era.
 Developers spend 90% of their time building plumbing:
@@ -19,7 +19,7 @@ Developers spend 90% of their time building plumbing:
 *   Building complex ledgers to avoid data loss (Double-Entry Accounting).
 *   Worrying about PII encryption, GDPR compliance, and regulatory reporting.
 
-**FintraOS** handles this "Hardware Layer"—not just bank APIs, but **ALL financial information**. We unify data from crypto exchanges, ISAs, savings accounts, and investment portfolios, alongside loans, mortgages, and property assets. We integrate ledgers, identity verification, market data, regulatory rules, and prediction models.
+**FintraOS** handles this "Hardware Layer" - not just bank APIs, but **ALL financial information**. We unify data from crypto exchanges, ISAs, savings accounts, and investment portfolios, alongside loans, mortgages, and property assets. We integrate ledgers, identity verification, market data, regulatory rules, and prediction models.
 
 We do this so our customers can build the **next generation of financial applications** in thousands of different ways:
 *   **B2B Platforms:** Giving SaaS companies deep insights into their clients' cash flow to automate underwriting.
@@ -37,7 +37,7 @@ This series positions FintraOS as a paradigm shift. It targets CTOs, Product Arc
 ### Article 1: Why Fintech Needs an Operating System (Not Just Another API)
 
 #### The "Plumbing Trap": A Startup Horror Story
-Every Fintech founder starts with a vision. "I want to build an autonomous savings app that helps gig workers retire." Or, "I want to automate small business lending based on real-time cash flow." The vision is always about the *Application*—the value delivered to the user.
+Every Fintech founder starts with a vision. "I want to build an autonomous savings app that helps gig workers retire." Or, "I want to automate small business lending based on real-time cash flow." The vision is always about the *Application* - the value delivered to the user.
 
 But before they can write a single line of logic for that vision, they hit the wall. The "Plumbing Trap."
 They realize that to build a lending app, they first need to connect to 5,000 banks. They need to handle OAuth tokens, refresh cycles, and 17 different error codes for "Insufficent Funds." They need to parse messy JSON blobs where "Starbucks" is spelled 50 different ways (`STARBUCKS #112`, `STBKS COFFEE`, `SQ *STARBUCKS`). They need to build a secure database that encrypts PII at rest.
@@ -52,7 +52,7 @@ In our world, the "hardware" is the chaotic global financial system. It is a mes
 *   **Legacy Banks:** COBOL mainframes from the 1970s that go offline for maintenance every Sunday.
 *   **Open Banking APIs:** Fragmented standards (PSD2, FDX) that vary wildly between regions and providers.
 *   **Crypto & DeFi:** A completely different universe of ledgers, wallet addresses, and gas fees.
-*   **Regulatory Rules:** KYC, AML, GDPR, CCPA—the "drivers" required to operate legally.
+*   **Regulatory Rules:** KYC, AML, GDPR, CCPA - the "drivers" required to operate legally.
 
 **2. The "Kernel": The Unifying Abstraction Layer**
 FintraOS acts as the kernel. We don't just pass data through; we normalize it. We treat a transaction from Chase, a Bitcoin transfer from Coinbase, and a mortgage payment from a credit union as the exact same object: a `UnifiedTransaction`.
@@ -120,7 +120,7 @@ Because we store every state change, we can tell you exactly what a user’s fin
 *   *Use Case:* This is critical for underwriting (seeing historical volatility) and auditing (proving compliance at a specific moment).
 
 **2. Perfect Auditability & Correction**
-If there is a bug, we don't try to "fix" the database row directly—that would destroy the evidence of the error. Instead, we issue a `CorrectionEvent`.
+If there is a bug, we don't try to "fix" the database row directly - that would destroy the evidence of the error. Instead, we issue a `CorrectionEvent`.
 *   **Event 4 (Error):** `Withdrawal { amount: 50 }` (Duplicate)
 *   **Event 5 (Fix):** `Correction { ref_event: 4, amount: +50, reason: "Duplicate processing" }`
 The history of the mistake and the fix is preserved forever. Auditors love this. It builds trust.
@@ -193,7 +193,7 @@ This "application-level security" is fragile because it depends on human perfect
 
 #### The Guard Sidecar: Infrastructure-Level Security
 At FintraOS, we don't trust developers to remember security. We bake it into the infrastructure itself. We use the **Guard Sidecar Pattern**.
-Every single service in our cluster—whether it's the Core engine or a 3rd party plugin—sits behind a lightweight proxy called **Guard**.
+Every single service in our cluster - whether it's the Core engine or a 3rd party plugin - sits behind a lightweight proxy called **Guard**.
 
 **1. Transparent Encryption**
 When the "Core" module writes to the database, it doesn't encrypt the data itself. It sends plain text to the Sidecar. The Sidecar intercepts the write, talks to the **Key Management Service (KMS)**, retrieves the specific encryption key for that Tenant, encrypts the sensitive fields, and *then* writes the encrypted blob to the disk.
@@ -207,13 +207,13 @@ We use **Open Policy Agent (OPA)** to enforce access control. Instead of hardcod
 #### Crypto-Shredding: The "Right to be Forgotten"
 GDPR and CCPA give users the "Right to be Forgotten." In a complex distributed system with backups, logs, and data lakes, actually deleting a user's data is a nightmare.
 FintraOS solves this with **Crypto-Shredding** (defined in our ADR-002).
-*   **The Strategy:** Every user has a unique Data Encryption Key (DEK). All their data—every transaction, every PII field—is encrypted with this key.
+*   **The Strategy:** Every user has a unique Data Encryption Key (DEK). All their data - every transaction, every PII field - is encrypted with this key.
 *   **The Key Hierarchy:**
     *   **Master Key:** Protects the Tenant Keys (Held in Hardware Security Module).
     *   **Tenant Key:** Protects the User Keys.
     *   **User Key (DEK):** Encrypts the actual data.
 *   **The Deletion:** When a user asks to be deleted, we don't hunt down every row in every database. We simply delete their DEK from the KMS.
-*   **The Result:** Instantly, all their data—across petabytes of backups, logs, and archives—becomes mathematical gibberish. It is irretrievable. We have "shredded" the data by destroying the only way to read it. This ensures 100% compliance without complex data scrubbing operations.
+*   **The Result:** Instantly, all their data - across petabytes of backups, logs, and archives - becomes mathematical gibberish. It is irretrievable. We have "shredded" the data by destroying the only way to read it. This ensures 100% compliance without complex data scrubbing operations.
 
 #### AI Context Scoping
 With the rise of LLMs, we face a new risk: "Hallucinations" and "Data Leakage."
@@ -235,7 +235,7 @@ If your app connects directly to a bank (or even a single aggregator), your app 
 FintraOS treats bank providers like redundant hard drives in a RAID array. We built the **Provider Abstraction Layer (PAL)** to insulate you from this chaos.
 
 **1. The "Universal Adapter"**
-We force every provider—whether it's Plaid, Yapily, Teller, or a direct bank API—to conform to *our* internal strict interface.
+We force every provider - whether it's Plaid, Yapily, Teller, or a direct bank API - to conform to *our* internal strict interface.
 ```go
 type ProviderAdapter interface {
     GetLinkToken(user User) (string, error)
