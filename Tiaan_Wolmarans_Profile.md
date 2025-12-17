@@ -64,7 +64,7 @@ With over fifteen years of leadership, including as COO at Altify, I've excelled
 ## 🎓 Education
 
 **Barcelona School of Business**
-*   **Masters**: Blockchain and Fintech (Completes Jan 2025)
+*   **Masters**: Blockchain and Fintech (2025)
 
 **University of Cape Town** (2016)
 *   **Diploma**: Advanced Project Management

@@ -90,7 +90,7 @@ My expertise in driving strategic growth and innovation within financial service
     {
       institution: "Barcelona School of Business",
       degree: "Masters in Blockchain and Fintech",
-      year: "Completes Jan 2025"
+      year: "2025"
     },
     {
       institution: "University of Cape Town",

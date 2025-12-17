@@ -89,7 +89,7 @@ Diploma: Graphic Design (2016)
 University of Cape Town
 Diploma: Web Design and Development (2016)
 Barcelona School of Business
-Masters: Blockchain and Fintech (Completes Jan 2025)
+Masters: Blockchain and Fintech (2025)
 ADDITIONAL
 SKILLS
 • Project Planning
