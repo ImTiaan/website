@@ -13,10 +13,18 @@ export default function Blog({ posts }: BlogProps) {
 
   useEffect(() => {
     if (selectedPost && topRef.current) {
-      // Use a small timeout to ensure the DOM is fully updated and layout is recalculated
-      // This fixes the issue where scrollIntoView might fire before the container height updates
+      // Use a small timeout to ensure the DOM is fully updated
       const timer = setTimeout(() => {
-        topRef.current?.scrollIntoView({ behavior: "instant", block: "start" });
+        // Find the scrollable parent container (the Window content div)
+        let parent = topRef.current?.parentElement;
+        while (parent) {
+          const style = window.getComputedStyle(parent);
+          if (style.overflowY === 'auto' || style.overflowY === 'scroll') {
+            parent.scrollTop = 0;
+            break;
+          }
+          parent = parent.parentElement;
+        }
       }, 10);
       return () => clearTimeout(timer);
     }
