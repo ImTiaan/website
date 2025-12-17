@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { FileText, ArrowRight, ArrowLeft } from "lucide-react";
 import { BlogPost } from "@/lib/posts";
 import ReactMarkdown from "react-markdown";
@@ -9,10 +9,23 @@ interface BlogProps {
 
 export default function Blog({ posts }: BlogProps) {
   const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
+  const topRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (selectedPost && topRef.current) {
+      // Use a small timeout to ensure the DOM is fully updated and layout is recalculated
+      // This fixes the issue where scrollIntoView might fire before the container height updates
+      const timer = setTimeout(() => {
+        topRef.current?.scrollIntoView({ behavior: "instant", block: "start" });
+      }, 10);
+      return () => clearTimeout(timer);
+    }
+  }, [selectedPost]);
 
   if (selectedPost) {
     return (
       <div className="h-full flex flex-col">
+        <div ref={topRef} />
         <button 
           onClick={() => setSelectedPost(null)}
           className="flex items-center gap-2 text-sm text-white/60 hover:text-white mb-6 transition-colors w-fit group"
@@ -59,6 +72,14 @@ export default function Blog({ posts }: BlogProps) {
             </ReactMarkdown>
           </div>
         </article>
+        
+        <button 
+          onClick={() => setSelectedPost(null)}
+          className="flex items-center gap-2 text-sm text-white/60 hover:text-white mt-12 mb-6 transition-colors w-fit group"
+        >
+          <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+          Back to all posts
+        </button>
       </div>
     );
   }
