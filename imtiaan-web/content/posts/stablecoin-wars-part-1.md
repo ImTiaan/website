@@ -3,6 +3,7 @@ title: "The Stablecoin Wars Part I: The Graveyard of Good Intentions"
 date: "2025-06-13"
 excerpt: "Before the billions, before the regulations, and before the dominance of Tether, there was a wild west of algorithmic hubris. We trace the history of the stablecoin from the visionary failure of BitUSD to the $60 billion smoking crater of Terra."
 category: "History"
+series: "Stablecoin Wars"
 readTime: "25 min read"
 ---
 

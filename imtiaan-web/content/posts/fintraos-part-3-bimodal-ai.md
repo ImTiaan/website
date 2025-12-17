@@ -3,6 +3,7 @@ title: "FintraOS Part 3: Bi-Modal Intelligence Architecture"
 date: "2025-09-20"
 excerpt: "Architecting Bi-Modal AI. How FintraOS uses Stream Processing and Batch Analysis to build self-driving money."
 category: "Engineering"
+series: "FintraOS"
 readTime: "16 min read"
 ---
 

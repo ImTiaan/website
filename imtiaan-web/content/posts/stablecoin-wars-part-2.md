@@ -2,7 +2,8 @@
 title: "The Stablecoin Wars Part II: The Fortress of Compliance"
 date: "2025-08-22"
 excerpt: "The algorithmic cowboys are dead. In their place stand the giants: Tether and Circle. But as Europe's MiCA regulation comes online, the era of 'move fast and break things' is over. Welcome to the era of the regulated fortress."
-category: "Regulation"
+category: "Crypto"
+series: "Stablecoin Wars"
 readTime: "25 min read"
 ---
 

@@ -3,6 +3,7 @@ title: "The Broken Stack: Why Finance Needs a Kernel"
 date: "2025-06-13"
 excerpt: "The modern financial stack is a lie. We promised the world programmable money, but we delivered a distributed systems nightmare built on screen scraping and race conditions. It is time to stop building dumb pipes and start building a nervous system."
 category: "Fintech"
+series: "FintraOS"
 readTime: "30 min read"
 ---
 

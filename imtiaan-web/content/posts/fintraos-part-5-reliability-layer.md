@@ -3,6 +3,7 @@ title: "FintraOS Part 5: Reliability & Provider Abstraction"
 date: "2025-12-05"
 excerpt: "Surviving the chaos. How the Provider Abstraction Layer (PAL) ensures 99.99% uptime in a broken financial system."
 category: "Engineering"
+series: "FintraOS"
 readTime: "12 min read"
 ---
 

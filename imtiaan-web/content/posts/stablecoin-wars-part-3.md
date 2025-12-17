@@ -2,7 +2,8 @@
 title: "The Stablecoin Wars Part III: The European Void"
 date: "2025-11-05"
 excerpt: "We have the regulation. We have the technology. What we don't have is the money. Europe is currently a digital colony of the US Dollar, but the convergence of MiCA and Bitcoin's Lightning Network offers a once-in-a-generation opportunity to build a sovereign, digital Euro."
-category: "Future"
+category: "Crypto"
+series: "Stablecoin Wars"
 readTime: "30 min read"
 ---
 

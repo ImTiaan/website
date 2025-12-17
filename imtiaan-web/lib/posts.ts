@@ -11,6 +11,7 @@ export interface BlogPost {
   excerpt: string;
   content: string;
   category?: string;
+  series?: string;
   readTime?: string;
 }
 
@@ -32,7 +33,8 @@ export function getAllPosts(): BlogPost[] {
       return {
         id,
         content: matterResult.content,
-        ...(matterResult.data as { title: string; date: string; excerpt: string }),
+        series: matterResult.data.series,
+        ...(matterResult.data as { title: string; date: string; excerpt: string; category?: string }),
       };
     });
 

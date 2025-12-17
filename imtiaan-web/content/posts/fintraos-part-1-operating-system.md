@@ -3,6 +3,7 @@ title: "FintraOS Part 1: The Operating System Thesis"
 date: "2025-07-15"
 excerpt: "Why Fintech needs a kernel. Moving beyond the 'Plumbing Trap' to a true Operating System for finance."
 category: "Engineering"
+series: "FintraOS"
 readTime: "15 min read"
 ---
 

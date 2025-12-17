@@ -3,6 +3,7 @@ title: "FintraOS Part 2: The Financial Graph & Event Sourcing"
 date: "2025-08-15"
 excerpt: "Why we killed CRUD. A deep dive into the Event Sourcing architecture that powers the Financial Graph."
 category: "Engineering"
+series: "FintraOS"
 readTime: "18 min read"
 ---
 

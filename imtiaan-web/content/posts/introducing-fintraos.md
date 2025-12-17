@@ -3,6 +3,7 @@ title: "FintraOS: Programmable Money, Strictly Typed"
 date: "2025-12-16"
 excerpt: "Introducing the Operating System for Autonomous Finance. A deep dive into the Event Sourcing architecture, deterministic state machines, and the 'Financial Twin'."
 category: "Product"
+series: "FintraOS"
 readTime: "30 min read"
 ---
 

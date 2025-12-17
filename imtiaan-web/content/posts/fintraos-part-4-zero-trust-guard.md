@@ -3,6 +3,7 @@ title: "FintraOS Part 4: Zero Trust & Infrastructure Security"
 date: "2025-11-10"
 excerpt: "Zero Trust by Default. How the 'Guard' sidecar and crypto-shredding provide infrastructure-level security."
 category: "Engineering"
+series: "FintraOS"
 readTime: "14 min read"
 ---
 
