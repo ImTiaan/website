@@ -1,6 +1,6 @@
 export const profileData = {
   name: "Tiaan Wolmarans",
-  title: "Chief Operating Officer & Head of Product",
+  title: "COO & Fintech Architect",
   tagline: "Fintech | Blockchain | Operations | Product Innovation",
   location: "Liverpool, UK",
   email: "t@imtiaan.com", // Placeholder

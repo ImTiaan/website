@@ -8,10 +8,10 @@ const services = [
     features: ["Process Optimization", "Team Structure & Scaling", "Regulatory Compliance", "Operational Efficiency"]
   },
   {
-    title: "Product Strategy & Innovation",
+    title: "Ledger Architecture & Fintech Design",
     icon: Rocket,
-    description: "Turning complex blockchain and fintech concepts into user-friendly products. From whitepaper to launch, I guide the product lifecycle.",
-    features: ["Product Roadmap", "Market Fit Analysis", "UX/UI Strategy", "Blockchain Integration"]
+    description: "Architecting the nervous system of your fintech. I design event-sourced financial primitives and immutable ledger systems that replace 'dumb pipes'.",
+    features: ["Event Sourcing Architecture", "Financial Primitive Design", "Ledger Immutability", "System Audits"]
   },
   {
     title: "Strategic Advisory",

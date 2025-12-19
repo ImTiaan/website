@@ -107,6 +107,19 @@ export default function Blog({ posts }: BlogProps) {
               {selectedPost.content}
             </ReactMarkdown>
           </div>
+
+          <div className="mt-12 p-6 rounded-xl bg-gradient-to-r from-emerald-900/20 to-blue-900/20 border border-emerald-500/20 text-center space-y-4">
+             <h3 className="text-xl font-bold text-white">Building a fintech?</h3>
+             <p className="text-white/70 max-w-lg mx-auto">
+               I selectively partner with founders to architect event-sourced financial systems that actually work.
+             </p>
+             <a 
+               href="mailto:t@imtiaan.com" 
+               className="inline-flex items-center gap-2 px-6 py-2 bg-emerald-500 hover:bg-emerald-600 text-black font-semibold rounded-full transition-all hover:shadow-[0_0_20px_rgba(16,185,129,0.4)]"
+             >
+               Apply for Q1 Availability
+             </a>
+          </div>
         </article>
         
         <button 

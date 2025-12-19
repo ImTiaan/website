@@ -37,6 +37,10 @@ export default function TopBar() {
       </div>
 
       <div className="flex items-center gap-4">
+        <div className="hidden sm:flex items-center gap-2 px-2 py-1 bg-emerald-500/10 rounded-full border border-emerald-500/20">
+          <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+          <span className="text-xs text-emerald-400">Limited Availability</span>
+        </div>
         <div className="flex items-center gap-2">
           <Wifi className="w-3.5 h-3.5" />
           <Battery className="w-3.5 h-3.5" />
